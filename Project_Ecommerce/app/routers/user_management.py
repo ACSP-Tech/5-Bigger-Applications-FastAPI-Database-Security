@@ -2,7 +2,7 @@
 
 # importing the necessary requirement
 from fastapi import APIRouter, HTTPException, status, Depends
-from ..schema.user_management import Register, RegisterOut, Login
+from ..schema.user_management import Register, RegisterOut, Login, Promote, PromoteOut
 from ..sec import pwd_context
 from app.utils import check_filepath
 from ..dep import auth, get_session
@@ -39,8 +39,8 @@ def login_user(detail:Login, session=Depends(get_session)):
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
-@router.patch("/promote-admin", status_code=status.HTTP_200_OK)
-def login_user(detail:Register, session=Depends(get_session), token=Depends(auth)):
+@router.patch("/promote-admin", status_code=status.HTTP_200_OK, response_model=PromoteOut)
+def login_user(detail:Promote, session=Depends(get_session), token=Depends(auth)):
     try:
         #get token
         res = admin_can_promote(detail, session, token)

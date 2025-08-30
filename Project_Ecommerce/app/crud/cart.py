@@ -3,9 +3,10 @@ from ..sec import  SECRET_KEY, ALGORITHM
 from fastapi import HTTPException, status
 from sqlmodel import select 
 from sqlalchemy import and_
+from datetime import date
 import jwt
 
-def create_cart_items(data, token, session):
+def create_cart_items(data, session, token):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         email = payload.get("email")
@@ -22,7 +23,7 @@ def create_cart_items(data, token, session):
         statement = select(Cart).where(and_(Cart.name == data.name.lower().strip(), Cart.user_id == id))
         cart_item = session.exec(statement).first() #eexecute that takes in conditions .all()
         # Create product
-        new_cart = cart_item(name=data.name.lower().strip(), price=data.price, quantity=data.quantity, user_id = id)
+        new_cart = Cart(name=data.name.lower().strip(), price=data.price, quantity=data.quantity, product_id=data.product_id, user_id = id, created_at=str(date.today()), amount=data.price*data.quantity)
         session.add(new_cart)
         session.commit()
         session.refresh(new_cart)
@@ -31,7 +32,7 @@ def create_cart_items(data, token, session):
         session.rollback()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to update note: {str(e)}"
+            detail=f"Failed to add to cart: {str(e)}"
         )    
 
 def check_out_cart(session, token):
@@ -47,21 +48,32 @@ def check_out_cart(session, token):
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="User not found"
             )
-        statement = select(Cart).where(and_(Cart.user_id == id))
+        statement = select(Cart).where(Cart.user_id == id)
         cart = session.exec(statement).all()  
         if not cart:
             raise HTTPException(
                 status_code=status.HTTP_409_CONFLICT,
                 detail="not cart items found to check out for this user"
             )
+        new_orders = []
         for item in cart:
-            new_order = Order(name=item.name, price=item.price, quantity=item.quantity, cart_id=item.id, amount=item.amount)        
-        #special function that add to a table
-        session.add(new_order)
-        session.delete(cart)
+            new_order = Order(
+                name=item.name,
+                price=item.price,
+                quantity=item.quantity,
+                cart_id=item.id,
+                user_id =item.user_id,
+                amount=item.amount,
+                created_at=str(date.today())
+            )
+            session.add(new_order)
+            session.delete(item)  # delete each item separately
+            new_orders.append(new_order)
         session.commit()
-        session.refresh(new_order)
-        return new_order
+        # refresh all new orders
+        for order in new_orders:
+            session.refresh(order)
+        return new_orders
     except Exception as e:
         session.rollback()
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))

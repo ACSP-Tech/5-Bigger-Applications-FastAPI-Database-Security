@@ -72,7 +72,7 @@ def get_token(data, session):
         session.rollback()
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
-def admin_can_promote(data, token, session):
+def admin_can_promote(data, session, token):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         email = payload.get("email")

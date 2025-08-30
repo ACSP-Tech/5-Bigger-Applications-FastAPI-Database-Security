@@ -18,3 +18,14 @@ class RegisterOut(BaseModel):
     last_name: str
     first_name: str
     email: str
+
+class Promote(BaseModel):
+    id: int
+    email: EmailStr
+
+class PromoteOut(BaseModel):
+    id: int
+    last_name: str
+    first_name: str
+    email: str
+    role: str

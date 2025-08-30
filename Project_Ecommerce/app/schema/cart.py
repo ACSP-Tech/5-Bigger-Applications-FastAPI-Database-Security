@@ -3,6 +3,7 @@ from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
 class Cart(BaseModel):
+    product_id: int
     name: str
     price: float
     quantity: float
@@ -13,7 +14,7 @@ class CartOut(BaseModel):
     name: str
     price: float
     quantity: int
-    created_at: datetime
+    created_at: str
     amount: float
 
 class Order(BaseModel):
@@ -21,5 +22,5 @@ class Order(BaseModel):
     name: str
     price: float
     amount: float
-    created_at: float
+    created_at: str
     cart_id: int

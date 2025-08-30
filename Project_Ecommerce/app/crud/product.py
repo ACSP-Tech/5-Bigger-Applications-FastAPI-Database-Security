@@ -5,7 +5,7 @@ from sqlmodel import select
 from sqlalchemy import and_
 import jwt
 
-def create_product(data, token, session):
+def create_product(data, session, token):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         email = payload.get("email")
@@ -29,7 +29,7 @@ def create_product(data, token, session):
                 detail="product name already exist"
             ) 
         # Create product
-        new_product = product(name=data.name.lower().strip(), price=data.price, stock=data.stock)
+        new_product = Product(name=data.name.lower().strip(), price=data.price, stock=data.stock)
         session.add(new_product)
         session.commit()
         session.refresh(new_product)
@@ -38,7 +38,7 @@ def create_product(data, token, session):
         session.rollback()
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to update note: {str(e)}"
+            detail=f"Failed to create product: {str(e)}"
         )    
 
 def view_products(session):

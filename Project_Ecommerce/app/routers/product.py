@@ -1,7 +1,6 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from ..schema.product import Product, ProductOut
 from ..dep import auth, get_session
-from app.utils import check_notepath
 from ..crud.product import create_product, view_products
 import json
 

@@ -1,0 +1,151 @@
+2025-08-30 10:04:57,130 - Request #1 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:04:57,160 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 10:05:22,032 - Request #2 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:06:22,814 - Request #3 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:06:30,303 - Request #4 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:06:42,160 - Request #5 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:07:50,931 - Request #6 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:13:04,713 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:13:15,504 - Request #2 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:13:54,841 - Request #3 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:20:09,975 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:22:16,445 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:27:05,245 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:28:13,702 - Request #2 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:28:24,721 - Request #3 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:28:46,866 - Request #4 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:30:00,448 - Request #5 | IP: 127.0.0.1 | Path: /students/create-student | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:30:25,295 - Request #6 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:30:34,910 - Request #7 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:30:34,930 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 10:31:00,414 - Request #8 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:32:36,615 - Request #1 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:33:40,729 - Request #1 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:34:43,765 - Request #2 | IP: 127.0.0.1 | Path: /products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:38:52,784 - Request #1 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:39:14,388 - Request #2 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:40:20,243 - Request #1 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:41:09,592 - Request #1 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:49:34,736 - Request #1 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:52:34,699 - Request #1 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:54:34,982 - Request #2 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:55:26,277 - Request #3 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:55:32,127 - Request #4 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:56:11,902 - Request #5 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:56:11,932 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 10:57:39,121 - Request #6 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:57:46,582 - Request #7 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 10:58:40,531 - Request #8 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:05:04,145 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:07:49,845 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:08:10,364 - Request #2 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:08:10,403 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 11:08:18,506 - Request #3 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:08:54,075 - Request #4 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:09:55,725 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:14:07,987 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:14:57,283 - Request #2 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:14:57,309 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 11:16:43,945 - Request #3 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:19:22,537 - Request #1 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:19:22,556 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 11:19:45,652 - Request #2 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:19:57,713 - Request #3 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:20:18,184 - Request #4 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:20:28,450 - Request #5 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:20:56,141 - Request #6 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:21:10,218 - Request #7 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:21:39,798 - Request #8 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:21:48,344 - Request #9 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:22:14,018 - Request #10 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:22:26,953 - Request #11 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:22:35,732 - Request #12 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:23:45,884 - Request #13 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:24:37,474 - Request #14 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:24:58,349 - Request #15 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:25:07,111 - Request #16 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:26:02,604 - Request #17 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:39:51,077 - Request #1 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:39:51,137 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 11:40:21,661 - Request #2 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:40:52,935 - Request #3 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:42:21,351 - Request #4 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:42:57,855 - Request #5 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:43:51,415 - Request #6 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:45:10,930 - Request #7 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:45:18,011 - Request #8 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:47:27,788 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:50:03,964 - Request #2 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:51:35,051 - Request #1 | IP: 127.0.0.1 | Path: /promote-admin | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:53:05,347 - Request #2 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:53:41,285 - Request #3 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:55:11,402 - Request #4 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:55:11,414 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 11:55:45,863 - Request #5 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:56:12,490 - Request #6 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:56:30,199 - Request #7 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:56:42,398 - Request #8 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:57:02,516 - Request #9 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:57:26,149 - Request #10 | IP: 127.0.0.1 | Path: /admin/products/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:57:49,493 - Request #11 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:58:19,205 - Request #12 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 11:58:30,932 - Request #13 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:04:36,048 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:07:03,786 - Request #2 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:07:03,810 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 12:07:47,019 - Request #3 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:09:35,580 - Request #1 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:10:21,795 - Request #2 | IP: 127.0.0.1 | Path: /cart/add | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:10:21,801 - Request #3 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:10:48,898 - Request #4 | IP: 127.0.0.1 | Path: /cart/add | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:10:48,902 - Request #5 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:11:05,307 - Request #6 | IP: 127.0.0.1 | Path: /cart/add | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:11:05,311 - Request #7 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:11:14,011 - Request #8 | IP: 127.0.0.1 | Path: /cart/add | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:11:14,018 - Request #9 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 12:11:28,170 - Request #10 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
