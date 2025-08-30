@@ -3,6 +3,7 @@ from ..sec import  SECRET_KEY, ALGORITHM
 from fastapi import HTTPException, status
 from sqlmodel import select 
 from sqlalchemy import and_
+from datetime import date
 import jwt
 
 def create_note(data, session, token):
@@ -26,7 +27,7 @@ def create_note(data, session, token):
                 detail="note title already exist"
             )  
         # Create student
-        new_note = note(name=data.title.lower().strip(), content=data.content, user_id=id)
+        new_note = Note(title=data.title.lower().strip(), content=data.content, user_id=id, created_at=str(date.today()))
         session.add(new_note)
         session.commit()
         session.refresh(new_note)
@@ -114,7 +115,6 @@ def update_user_note(id, data, session, token):
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="no note details found for this user matching the id passed"
             )
-        user_note.title = data.title.lower().strip()
         user_note.content = data.content
         session.commit()
         session.refresh(user_note)

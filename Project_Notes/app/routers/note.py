@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, status, Depends
-from ..schema.note import Note, NoteOut
+from ..schema.note import NoteCreate, NoteOut
 from ..dep import auth, get_session
 from app.utils import check_notepath
 from ..crud.note import create_note, get_user_notes, get_user_note_single, update_user_note, delete_user_note
@@ -8,7 +8,7 @@ import json
 router = APIRouter()
 
 @router.post("/notes/", response_model=NoteOut, status_code=status.HTTP_201_CREATED)
-def create_user_note(data:Note, session=Depends(get_session), token=Depends(auth)):
+def create_user_note(data:NoteCreate, session=Depends(get_session), token=Depends(auth)):
     try:
         file_path = check_notepath()
         #reading and loading json file
@@ -42,7 +42,7 @@ def view_note(id:int, session=Depends(get_session), token=Depends(auth)):
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
 @router.patch("/notes/{id}", status_code=status.HTTP_200_OK)
-def update_note(id:int, data:Note, session=Depends(get_session), token=Depends(auth)):
+def update_note(id:int, data:NoteCreate, session=Depends(get_session), token=Depends(auth)):
     try:
         file_path = check_notepath()
         #reading and loading json file

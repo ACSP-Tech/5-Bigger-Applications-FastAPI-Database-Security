@@ -1,0 +1,50 @@
+2025-08-30 07:35:46,780 - Request #1 | IP: 127.0.0.1 | Path: /register
+2025-08-30 07:35:46,803 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 07:40:27,564 - Request #1 | IP: 127.0.0.1 | Path: /register
+2025-08-30 07:40:27,584 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 07:41:37,395 - Request #2 | IP: 127.0.0.1 | Path: /register
+2025-08-30 07:41:48,343 - Request #3 | IP: 127.0.0.1 | Path: /register
+2025-08-30 07:42:00,508 - Request #4 | IP: 127.0.0.1 | Path: /login
+2025-08-30 07:42:12,905 - Request #5 | IP: 127.0.0.1 | Path: /login
+2025-08-30 07:42:25,420 - Request #6 | IP: 127.0.0.1 | Path: /logout
+2025-08-30 07:42:36,955 - Request #7 | IP: 127.0.0.1 | Path: /applications/
+2025-08-30 07:43:37,199 - Request #8 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 07:44:57,709 - Request #9 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 07:45:59,066 - Request #1 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 07:49:33,529 - Request #1 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 07:56:25,706 - Request #1 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:08:09,174 - Request #1 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:13:37,592 - Request #1 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:14:46,041 - Request #2 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:15:25,709 - Request #3 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:16:08,324 - Request #4 | IP: 127.0.0.1 | Path: /applications/
+2025-08-30 08:16:32,199 - Request #5 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:17:55,467 - Request #6 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:18:23,312 - Request #7 | IP: 127.0.0.1 | Path: /notes/1
+2025-08-30 08:18:30,665 - Request #8 | IP: 127.0.0.1 | Path: /notes/4
+2025-08-30 08:18:35,970 - Request #9 | IP: 127.0.0.1 | Path: /notes/3
+2025-08-30 08:21:23,303 - Request #10 | IP: 127.0.0.1 | Path: /notes/3
+2025-08-30 08:24:28,337 - Request #11 | IP: 127.0.0.1 | Path: /notes/
+2025-08-30 08:36:45,985 - Request #1 | IP: 127.0.0.1 | Path: /notes/3
+2025-08-30 08:37:03,545 - Request #2 | IP: 127.0.0.1 | Path: /notes/1
+2025-08-30 08:37:09,783 - Request #3 | IP: 127.0.0.1 | Path: /notes/2
+2025-08-30 08:37:15,546 - Request #4 | IP: 127.0.0.1 | Path: /notes/4
+2025-08-30 08:37:29,965 - Request #5 | IP: 127.0.0.1 | Path: /contacts/4
+2025-08-30 08:37:36,475 - Request #6 | IP: 127.0.0.1 | Path: /contacts/2
+2025-08-30 08:37:45,595 - Request #7 | IP: 127.0.0.1 | Path: /contacts/1
+2025-08-30 08:38:04,130 - Request #8 | IP: 127.0.0.1 | Path: /notes/1
+2025-08-30 08:38:14,647 - Request #9 | IP: 127.0.0.1 | Path: /notes/2
+2025-08-30 08:38:19,424 - Request #10 | IP: 127.0.0.1 | Path: /notes/4
+2025-08-30 08:38:47,649 - Request #11 | IP: 127.0.0.1 | Path: /redoc
+2025-08-30 08:38:47,990 - Request #12 | IP: 127.0.0.1 | Path: /openapi.json
+2025-08-30 08:38:50,100 - Request #13 | IP: 127.0.0.1 | Path: /openapi.json
