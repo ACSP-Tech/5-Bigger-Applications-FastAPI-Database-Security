@@ -27,7 +27,9 @@ class StudentRead(BaseModel):
     name: str
     age: int
     email: EmailStr
+    user_id: int
     grades: List[GradeRead]
+    
 
 # input schema for student update
 class StudentUpdate(BaseModel):

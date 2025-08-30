@@ -1,0 +1,66 @@
+2025-08-30 08:48:46,134 - INFO - User: anonymous | Method: POST | Path: /register
+2025-08-30 08:48:46,160 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 08:48:59,897 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 08:50:35,877 - INFO - User: anonymous | Method: POST | Path: /register
+2025-08-30 08:50:46,359 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 08:50:52,792 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 08:51:00,940 - INFO - User: anonymous | Method: GET | Path: /logout
+2025-08-30 08:51:52,516 - INFO - User: anonymous | Method: GET | Path: /logout
+2025-08-30 08:56:46,549 - INFO - User: anonymous | Method: POST | Path: /notes/
+2025-08-30 08:57:38,052 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 08:58:10,771 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 08:58:29,022 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 08:58:50,057 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:00:46,290 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:01:04,911 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:01:53,238 - INFO - User: anonymous | Method: POST | Path: /notes/
+2025-08-30 09:02:29,681 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:03:22,964 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:03:42,151 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:04:28,537 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:05:01,419 - INFO - User: anonymous | Method: POST | Path: /students/create-student
+2025-08-30 09:06:51,075 - INFO - User: anonymous | Method: POST | Path: /students/add-grade/5
+2025-08-30 09:07:37,639 - INFO - User: anonymous | Method: GET | Path: /students/view-student
+2025-08-30 09:10:40,359 - INFO - User: anonymous | Method: POST | Path: /students/add-grade/5
+2025-08-30 09:11:19,119 - INFO - User: anonymous | Method: GET | Path: /students/view-student-grade/5
+2025-08-30 09:12:09,593 - INFO - User: anonymous | Method: POST | Path: /students/add-grade/5
+2025-08-30 09:12:16,444 - INFO - User: anonymous | Method: GET | Path: /students/view-student-grade/4
+2025-08-30 09:12:34,179 - INFO - User: anonymous | Method: GET | Path: /students/view-student-grade/5
+2025-08-30 09:17:34,376 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-info/
+2025-08-30 09:17:48,984 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-info/5
+2025-08-30 09:17:58,794 - INFO - User: anonymous | Method: GET | Path: /students/view-student-grade/5
+2025-08-30 09:18:32,073 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-info/5
+2025-08-30 09:18:58,636 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 09:18:58,668 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 09:19:29,818 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-info/5
+2025-08-30 09:23:48,181 - INFO - User: anonymous | Method: GET | Path: /students/view-student
+2025-08-30 09:25:39,167 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/5
+2025-08-30 09:25:53,072 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/5
+2025-08-30 09:26:13,069 - INFO - User: anonymous | Method: GET | Path: /students/view-student-grade/5
+2025-08-30 09:26:52,636 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/5
+2025-08-30 09:30:32,400 - INFO - User: anonymous | Method: GET | Path: /students/view-student
+2025-08-30 09:31:47,413 - INFO - User: anonymous | Method: POST | Path: /login
+2025-08-30 09:31:47,452 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 09:32:29,117 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/5
+2025-08-30 09:42:13,182 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/5
+2025-08-30 09:43:11,315 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/1
+2025-08-30 09:44:10,792 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/1
+2025-08-30 09:44:31,338 - INFO - User: anonymous | Method: PATCH | Path: /students/update-student-grade-info/1
+2025-08-30 09:46:38,871 - INFO - User: anonymous | Method: GET | Path: /redoc
+2025-08-30 09:46:39,232 - INFO - User: anonymous | Method: GET | Path: /openapi.json
+2025-08-30 09:46:53,485 - INFO - User: anonymous | Method: GET | Path: /openapi.json

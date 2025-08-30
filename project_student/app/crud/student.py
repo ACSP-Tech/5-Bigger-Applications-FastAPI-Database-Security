@@ -67,13 +67,12 @@ def add_to_grade(data, session, token, studentid):
                 detail="student details not found for this user"
             )   
         
-        grade = Grade(subject=data.subject, score=data.score)
-        student.grades.append(grade)
+        grade = Grade(subject=data.subject, score=data.score, student_id = studentid)
         #special function that add to a table
-        session.add(student)
+        session.add(grade)
         session.commit()
-        session.refresh(student)
-        return student.grades
+        session.refresh(grade)
+        return grade
     except Exception as e:
         session.rollback()
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
@@ -156,18 +155,25 @@ def update_record(studentid, data, token, session):
                 detail="User not found"
             )
         #get a single user
-        statement = select(Student).where(and_(Student.user_id == id, Student.id == studentid, Student.grades.id == data.id))
+        statement = select(Student).where(and_(Student.user_id == id, Student.id == studentid))
         student = session.exec(statement).first()  
         if not student:
             raise HTTPException(
                 status_code=status.HTTP_409_CONFLICT,
-                detail="student grade id details not found for this user"
+                detail="student id details not found for this user"
             )
-        student.grades.subject = data.subject
-        student.grades.score = data.score
+        statement = select(Grade).where(and_(Grade.id == data.id, Grade.student_id == studentid))
+        grade=session.exec(statement).first()
+        if not grade:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail="grade id details not found for this student"
+            )
+        grade.subject = data.subject
+        grade.score = data.score
         session.commit()
-        session.refresh(student)
-        return student.grades
+        session.refresh(grade)
+        return grade
     
     except Exception as e:
         session.rollback()
