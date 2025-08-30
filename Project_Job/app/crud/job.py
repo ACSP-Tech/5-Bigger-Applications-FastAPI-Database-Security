@@ -20,7 +20,7 @@ def create_jobapplication(data, session, token):
             )
         statement = select(JobApplication).where(and_(JobApplication.position == data.position, 
                                                       JobApplication.company == data.company,
-                                                      JobApplication.date_applied == data.date_applied,  
+                                                      JobApplication.date_applied == str(data.date_applied),  
                                                       JobApplication.user_id == id))
         job = session.exec(statement).first()  
         if job:
@@ -29,7 +29,7 @@ def create_jobapplication(data, session, token):
                 detail="job application already already exist"
             )  
         # Create student
-        new_jobappl = job(company=data.company.lower().strip(), position=data.position.lower().strip(), date_applied=str(data.date_applied), status=data.status.lower().strip(), user_id=id)
+        new_jobappl = JobApplication(company=data.company.lower().strip(), position=data.position.lower().strip(), date_applied=str(data.date_applied), status=data.status.lower().strip(), user_id=id)
         session.add(new_jobappl)
         session.commit()
         session.refresh(new_jobappl)

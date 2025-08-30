@@ -1,0 +1,38 @@
+2025-08-30 06:37:00,912 - Request #1 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:37:00,939 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 06:37:41,553 - Request #1 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:37:41,599 - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\PRECIOUS\Desktop\Fast API_5.0\Librarybox\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-30 06:37:58,291 - Request #2 | IP: 127.0.0.1 | Path: /register | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:38:07,860 - Request #3 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:38:15,605 - Request #4 | IP: 127.0.0.1 | Path: /login | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:38:31,091 - Request #5 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:39:11,653 - Request #6 | IP: 127.0.0.1 | Path: /logout | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:51:48,403 - Request #7 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:52:04,714 - Request #1 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 06:52:50,736 - Request #2 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:02:10,160 - Request #1 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:03:45,545 - Request #2 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:08:34,822 - Request #1 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:08:57,952 - Request #2 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:09:25,020 - Request #3 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:11:09,210 - Request #4 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:14:02,240 - Request #5 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:14:34,612 - Request #6 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:18:01,858 - Request #7 | IP: 127.0.0.1 | Path: /applications/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:18:34,118 - Request #8 | IP: 127.0.0.1 | Path: /applications/search | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 07:19:02,755 - Request #9 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 07:19:03,094 - Request #10 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 07:21:51,536 - Request #1 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 07:21:51,705 - Request #2 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 07:22:01,672 - Request #3 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 07:22:07,765 - Request #4 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0

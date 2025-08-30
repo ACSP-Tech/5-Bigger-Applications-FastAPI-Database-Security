@@ -7,7 +7,7 @@ import json
 router = APIRouter()
 
 @router.post("/applications/", response_model=JobApplicationOut, status_code=status.HTTP_201_CREATED)
-def create_user_note(data:JobApplication, session=Depends(get_session), token=Depends(auth)):
+def create_user_applications(data:JobApplication, session=Depends(get_session), token=Depends(auth)):
     try:
         #authenticate user and add to job application
         message = create_jobapplication(data, session, token)
@@ -16,7 +16,7 @@ def create_user_note(data:JobApplication, session=Depends(get_session), token=De
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
 @router.get("/applications/", status_code=status.HTTP_200_OK)
-def view_notes(session=Depends(get_session), token=Depends(auth)):
+def view_applications(session=Depends(get_session), token=Depends(auth)):
     try:
         #authenticate user and add to student
         message = get_user_jobapplications(session, token)
@@ -25,7 +25,7 @@ def view_notes(session=Depends(get_session), token=Depends(auth)):
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     
 @router.get("/applications/search", status_code=status.HTTP_200_OK)
-def view_note(status:str, session=Depends(get_session), token=Depends(auth)):
+def view_applications(status:str, session=Depends(get_session), token=Depends(auth)):
     try:
         #authenticate user and add to student
         message = get_user_jobapplication_filter(status, session, token)

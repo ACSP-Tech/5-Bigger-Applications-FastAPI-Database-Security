@@ -1,14 +1,17 @@
 from pydantic import BaseModel
-from datetime import datetime
+from datetime import date
 
 
 class JobApplication(BaseModel):
-    title: str
-    content:str
+    company: str
+    position: str
+    date_applied: date
+    status: str
 
 class JobApplicationOut(BaseModel):
     id: int
-    title: str
-    content:str
-    created_at: datetime
+    company: str
+    position: str
+    date_applied: date
+    status: str
     user_id: int

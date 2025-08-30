@@ -51,7 +51,7 @@ def get_token(data, session):
                                 detail="Invalid password")
         #generate token
         payload = {
-            "exp": datetime.utcnow() + timedelta(minutes=180),
+            "exp": datetime.utcnow() + timedelta(minutes=30),
             "id": user.id,
             "email": user.email
             }

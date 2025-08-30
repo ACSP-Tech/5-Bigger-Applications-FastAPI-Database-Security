@@ -21,7 +21,7 @@ class JobApplication(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     company: str
     position: str
-    date_applied: date
+    date_applied: str
     status: str
     user_id: int = Field(foreign_key="user.id")
     
