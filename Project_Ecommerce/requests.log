@@ -149,3 +149,14 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-08-30 12:11:14,011 - Request #8 | IP: 127.0.0.1 | Path: /cart/add | User-Agent: PostmanRuntime/7.45.0
 2025-08-30 12:11:14,018 - Request #9 | IP: 127.0.0.1 | Path: /cart/add/ | User-Agent: PostmanRuntime/7.45.0
 2025-08-30 12:11:28,170 - Request #10 | IP: 127.0.0.1 | Path: /cart/checkout/ | User-Agent: PostmanRuntime/7.45.0
+2025-08-30 23:36:52,126 - Request #1 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:36:53,202 - Request #2 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:36:59,398 - Request #3 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:36:59,524 - Request #4 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:08,187 - Request #5 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:08,328 - Request #6 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:10,898 - Request #7 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:11,061 - Request #8 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:30,950 - Request #1 | IP: 127.0.0.1 | Path: /redoc | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:31,033 - Request #2 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
+2025-08-30 23:38:35,204 - Request #3 | IP: 127.0.0.1 | Path: /openapi.json | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0
